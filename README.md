@@ -2,7 +2,7 @@
 
 Turn text materials into a narrated, 3Blue1Brown-style explainer video:
 programmatic SVG animation (deterministic, rendered frame-by-frame in headless Chromium), Chatterbox TTS voice-over
-in a cloned reference voice, soft subtitles, and automated checks. A companion Cursor agent skill
+in a cloned reference voice, soft subtitles, and automated checks. A companion agent skill
 (`skill/3b1b-explainer/`) guides the judgment-heavy parts (storyboard, narration, scene design) and calls this CLI
 for everything mechanical.
 
