@@ -1,0 +1,22 @@
+{
+  "title": "Untitled explainer",
+  "legend": {
+    "blue": "the main concept",
+    "gold": "the item being tracked",
+    "grey": "secondary structure"
+  },
+  "pronunciations": {
+    "API": "A P I"
+  },
+  "scenes": [
+    {
+      "id": "s1_intro",
+      "header": "Introduction",
+      "visual": "Title writes on; a concept box draws in; a token travels along an arrow.",
+      "beats": [
+        { "id": "s1_b1", "text": "This is the first narrated beat of the scene." },
+        { "id": "s1_b2", "text": "A second beat drives the next reveal.", "say": "A second beat drives the next reveal." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "paths": {
+    "script": "script.json",
+    "scenes_dir": "scenes",
+    "scripts": null,
+    "materials": "materials",
+    "build": "build",
+    "cache": "audio/cache",
+    "output": "output"
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "crf": 17,
+    "preset": "medium",
+    "max_duration_s": 480,
+    "output_name": null
+  },
+  "timing": {
+    "scene_lead_s": 0.8,
+    "beat_gap_s": 0.5,
+    "scene_tail_s": 1.1,
+    "scene_tail_overrides": {},
+    "est_sec_per_word": 0.37
+  },
+  "tts": {
+    "backend": "gradio",
+    "fallback": "direct",
+    "gradio_url": "http://127.0.0.1:7860/",
+    "gradio_api": "/generate",
+    "voice": "voice.wav",
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "temperature": 0.8,
+    "seed": 1234,
+    "max_chunk_words": 28,
+    "chunk_gap_s": 0.22,
+    "pause_s": 0.55,
+    "attempts": 3,
+    "accept_rate": [
+      0.24,
+      0.62
+    ],
+    "target_rate": 0.4,
+    "request_retries": 3,
+    "request_timeout_s": 900,
+    "workers": 1,
+    "trim_threshold": 0.012,
+    "edge_pad_s": 0.06,
+    "direct": {
+      "python": "E:/Voice/chatterbox/.venv/Scripts/python.exe",
+      "threads": 8,
+      "device": "cpu"
+    }
+  },
+  "audio": {
+    "sample_rate": 24000,
+    "narration_peak": 0.89,
+    "loudness_i": -16,
+    "loudness_tp": -1.5,
+    "loudness_lra": 11,
+    "aac_bitrate": "192k",
+    "out_sample_rate": 48000
+  },
+  "subtitles": {
+    "enabled": true,
+    "max_chars": 84,
+    "wrap_chars": 44
+  },
+  "render": {
+    "workers": 0,
+    "scan_step_s": null,
+    "layout_step_s": 0.5
+  },
+  "checks": {
+    "rate_range": [
+      0.28,
+      0.55
+    ],
+    "max_internal_silence_s": 1.0,
+    "sync_tolerance_ms": 40,
+    "av_tolerance_frames": 2,
+    "contact_columns": 6,
+    "contact_width": 480
+  }
+}

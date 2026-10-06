@@ -1,0 +1,31 @@
+{
+  "title": "Why Binary Search Takes log n Steps",
+  "legend": {
+    "blue": "array cells still in play",
+    "gold": "the middle element being compared",
+    "coral": "discarded half",
+    "green": "the target once found",
+    "teal": "the halving formula"
+  },
+  "pronunciations": {},
+  "scenes": [
+    {
+      "id": "s1_halving",
+      "header": "One comparison, half the array",
+      "visual": "Sixteen sorted cells; the middle cell glows gold and is compared with the target 41; the left half turns coral and fades; repeat until the target is green.",
+      "beats": [
+        { "id": "s1_b1", "text": "Binary search looks for a target in a sorted array by checking the middle element first." },
+        { "id": "s1_b2", "text": "If the target is larger, the whole left half is discarded. If it is smaller, the right half goes. Either way, one comparison removes half the candidates." }
+      ]
+    },
+    {
+      "id": "s2_log",
+      "header": "Counting the halvings",
+      "visual": "Bars n, n/2, n/4 ... shrink to 1 with a KaTeX formula n/2^k = 1 => k = log2 n; then a million vs 20 comparison.",
+      "beats": [
+        { "id": "s2_b1", "text": "After k comparisons, only n over two to the k candidates remain. The search ends when that reaches one, so k is about log base two of n.", "say": "After k comparisons, only n over two to the k candidates remain. The search ends when that reaches one, so k is about log base two of n." },
+        { "id": "s2_b2", "text": "For a million elements that is just twenty comparisons, versus up to a million for a linear scan." }
+      ]
+    }
+  ]
+}
